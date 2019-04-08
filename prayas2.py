@@ -1,0 +1,12 @@
+x=input()
+ff="first_file.txt"
+fs="second_file.txt"
+file=open(ff,'w')
+file.write(x)
+file.close()
+file=open(ff,'r')
+text=file.read()
+file.close()
+file=open(fs,'w')
+file.write(text)
+file.close()
